@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Ridwan Lubis - Portofolio QA</title>
+<meta name="description" content="Portofolio Aspiring QA Engineer: demo aplikasi dan laporan hasil testing.">
+<style>
+:root{--ink:#0F172A;--muted:#3B4656;--bg:#F4F6F9;--card:#FFFFFF;--line:#D5DBE3;--accent:#0F766E;--accent-ink:#0F5E57;--chip:#DCEFEC;--chip-ink:#0B4A44}
+@media (prefers-color-scheme:dark){:root{--ink:#F1F5F9;--muted:#B6C0CE;--bg:#0B1220;--card:#131C2E;--line:#27324A;--accent:#14B8A6;--accent-ink:#5EEAD4;--chip:#12332F;--chip-ink:#99F6E4}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+nav{background:var(--card);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+nav div{display:flex;gap:20px}
+.hero{padding:64px 0 40px}
+.eyebrow{margin:0;font-size:13px;font-weight:700;letter-spacing:1px;color:var(--accent-ink)}
+h1{margin:8px 0 16px;font-size:clamp(32px,6vw,52px);line-height:1.1}
+.lead{font-size:18px;color:var(--muted);max-width:720px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{min-height:44px;padding:0 20px;display:inline-flex;align-items:center;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent-ink)}
+.btn:hover{opacity:.9}
+h2{font-size:28px;margin:48px 0 16px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chips span{padding:8px 16px;border-radius:999px;background:var(--chip);color:var(--chip-ink);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:20px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .tag{color:var(--accent-ink);font-weight:600;font-size:13px}
+.card .btns{margin-top:auto;padding-top:8px}
+footer{margin-top:64px;padding:40px 0;background:#0F172A;color:#fff}
+footer p{color:#CBD5E1;margin:8px 0 0}
+footer a{color:#5EEAD4}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><strong>M. Ridwan Lubis</strong><div><a href="#project">Project</a><a href="#skill">Skill</a><a href="#kontak">Kontak</a></div></div></nav>
+<main class="wrap">
+<section class="hero">
+<p class="eyebrow">ASPIRING QA ENGINEER</p>
+<h1>Muhammad Ridwan Lubis</h1>
+<p class="lead">Technical Support yang beralih ke software testing. Lulusan Ilmu Komputer Universitas Sumatera Utara. Setiap project di bawah ini punya demo yang bisa dicoba dan laporan hasil test yang bisa dibaca.</p>
+<div class="btns">
+<a class="btn" href="cv/CV-Muhammad-Ridwan-Lubis.pdf" target="_blank" rel="noopener">Download CV</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/GANTI-USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn ghost" href="https://github.com/GANTI-USERNAME" target="_blank" rel="noopener">GitHub</a>
+</div>
+</section>
+<section id="skill">
+<h2>Teknik Testing</h2>
+<div class="chips"><span>Functional Testing</span><span>Negative Testing</span><span>Boundary Value</span><span>Equivalence Partitioning</span><span>Bug Reporting</span></div>
+</section>
+<section id="project">
+<h2>Project</h2>
+<div class="grid">
+<article class="card">
+<h3>Secure Login UI</h3>
+<p>Halaman login dan autentikasi (HTML/CSS/JS).</p>
+<p class="tag">Functional, Negative Testing</p>
+<div class="btns">
+<a class="btn" href="https://GANTI-USERNAME.github.io/login/" target="_blank" rel="noopener">Lihat Demo</a>
+<a class="btn ghost" href="reports/login-ui.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+</div>
+</article>
+<article class="card">
+<h3>To-Do List</h3>
+<p>Aplikasi CRUD dengan penyimpanan localStorage.</p>
+<p class="tag">Functional, CRUD Testing</p>
+<div class="btns">
+<a class="btn" href="https://GANTI-USERNAME.github.io/todo/" target="_blank" rel="noopener">Lihat Demo</a>
+<a class="btn ghost" href="reports/todo-list.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+</div>
+</article>
+<article class="card">
+<h3>Katalog Buku (Library)</h3>
+<p>Cari, filter, dan pinjam buku.</p>
+<p class="tag">Functional, Search dan Filter</p>
+<div class="btns">
+<a class="btn" href="https://GANTI-USERNAME.github.io/library/" target="_blank" rel="noopener">Lihat Demo</a>
+<a class="btn ghost" href="reports/library.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+</div>
+</article>
+<article class="card">
+<h3>Form Registrasi</h3>
+<p>Form dengan validasi banyak field.</p>
+<p class="tag">Boundary Value, Equivalence Partitioning</p>
+<div class="btns">
+<a class="btn" href="https://GANTI-USERNAME.github.io/registrasi/" target="_blank" rel="noopener">Lihat Demo</a>
+<a class="btn ghost" href="reports/registrasi.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+</div>
+</article>
+<article class="card">
+<h3>Online Shop Web App: Alur Belanja dari Produk sampai Transaksi</h3>
+<p>Alur belanja lengkap dari daftar produk, keranjang, hingga transaksi.</p>
+<p class="tag">Functional, End-to-End Flow</p>
+<div class="btns">
+<a class="btn" href="https://GANTI-USERNAME.github.io/online-shop/" target="_blank" rel="noopener">Lihat Demo</a>
+<a class="btn ghost" href="reports/online-shop.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer id="kontak"><div class="wrap">
+<h2 style="margin:0;font-size:24px">Contact</h2>
+<p>Email: <a href="mailto:GANTI@email.com">mridwanlbs233@email.com</a> · <a href="https://www.linkedin.com/in/GANTI-USERNAME">www.linkedin.com/in/mridwanlbs23</a> · <a href="https://github.com/GANTI-USERNAME">GitHub</a></p>
+</div></footer>
+</body>
+</html>
