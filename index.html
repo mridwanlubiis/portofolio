@@ -5,47 +5,162 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Ridwan Lubis - Portofolio QA</title>
 <meta name="description" content="Portofolio Aspiring QA Engineer: demo aplikasi dan laporan hasil testing.">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav><div class="wrap"><strong>M. Ridwan Lubis</strong>
-<div class="links"><a href="#tentang">Tentang</a><a href="#project">Project</a><a href="#perjalanan">Perjalanan</a><a href="#kontak">Kontak</a><button id="theme" type="button" aria-label="Ganti mode tampilan">Mode terang</button></div></div></nav>
+
+<!-- ===== MENU ATAS ===== -->
+<nav><div class="wrap">
+  <strong>M. Ridwan Lubis</strong>
+  <div class="links">
+    <a href="#tentang">Tentang</a>
+    <a href="#project">Project</a>
+    <a href="#perjalanan">Perjalanan</a>
+    <a href="#kontak">Kontak</a>
+    <button id="theme" type="button" aria-label="Ganti mode tampilan">Mode terang</button>
+  </div>
+</div></nav>
+
 <main class="wrap">
+
+<!-- ===== BAGIAN ATAS: FOTO, NAMA, TOMBOL ===== -->
 <section class="hero">
-<div class="photo"><div>MR</div><img src="foto.jpg" alt="Foto Muhammad Ridwan Lubis" onerror="this.remove()"></div>
-<div>
-<p class="eyebrow">ASPIRING QA ENGINEER</p>
-<h1>Muhammad Ridwan Lubis</h1>
-<p class="lead">Technical Support yang beralih ke software testing. Setiap project di bawah ini punya demo yang bisa dicoba dan laporan hasil test yang bisa dibaca.</p>
-<div class="btns">
-<a class="btn" href="cv/CV-Muhammad-Ridwan-Lubis.pdf" target="_blank" rel="noopener">Download CV</a>
-<a class="btn ghost" href="https://www.linkedin.com/in/mridwanlbs23" target="_blank" rel="noopener">LinkedIn</a>
-<a class="btn ghost" href="https://github.com/mridwanlbs233-collab" target="_blank" rel="noopener">GitHub</a>
-</div></div>
+  <!-- Foto: simpan dengan nama foto.jpg di folder yang sama. Kalau belum ada, tampil inisial. -->
+  <div class="photo">
+    <div class="inisial">MR</div>
+    <img src="foto.jpg" alt="Foto Muhammad Ridwan Lubis" onerror="this.remove()">
+  </div>
+  <div>
+    <p class="eyebrow">ASPIRING QA ENGINEER</p>
+    <h1>Muhammad <span>Ridwan Lubis</span></h1>
+    <p class="lead">Technical Support yang beralih ke software testing. Setiap project di bawah ini punya demo yang bisa dicoba dan laporan hasil test yang bisa dibaca.</p>
+    <div class="btns">
+      <a class="btn" href="cv/CV-Muhammad-Ridwan-Lubis.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/mridwanlbs23" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/mridwanlbs233-collab" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
 </section>
+
+<!-- ===== TENTANG SAYA ===== -->
 <section id="tentang" class="reveal">
-<h2>Tentang Saya</h2>
-<p class="about">Saya Technical Support yang sedang beralih ke software testing. Latar belakang Ilmu Komputer membuat saya terbiasa membaca alur sistem, dan pekerjaan sehari-hari melatih saya memahami masalah dari sisi pengguna. Saya belajar dengan membangun aplikasi kecil, lalu mengujinya lewat test case, bug report, dan teknik seperti Boundary Value Analysis dan Equivalence Partitioning.</p>
+  <h2>Tentang Saya</h2>
+  <p class="about">Saya Technical Support yang sedang beralih ke software testing. Latar belakang Ilmu Komputer membuat saya terbiasa membaca alur sistem, dan pekerjaan sehari-hari melatih saya memahami masalah dari sisi pengguna. Saya belajar dengan membangun aplikasi kecil, lalu mengujinya lewat test case, bug report, dan teknik seperti Boundary Value Analysis dan Equivalence Partitioning.</p>
 </section>
+
+<!-- ===== PROJECT ===== -->
 <section id="project" class="reveal">
-<h2>Project</h2>
-<div class="chips" id="filters" role="group" aria-label="Filter project"></div>
-<div class="grid" id="grid"></div>
+  <h2>Project</h2>
+
+  <!-- Tombol filter. data-filter harus sama dengan salah satu kata di data-k pada kartu. -->
+  <div class="chips" role="group" aria-label="Filter project">
+    <button class="chip on" type="button" data-filter="all">Semua</button>
+    <button class="chip" type="button" data-filter="functional">Functional</button>
+    <button class="chip" type="button" data-filter="negative">Negative</button>
+    <button class="chip" type="button" data-filter="bva">Boundary Value</button>
+    <button class="chip" type="button" data-filter="ep">Equivalence Partitioning</button>
+    <button class="chip" type="button" data-filter="e2e">End-to-End</button>
+  </div>
+
+  <div class="grid">
+
+    <!-- PROJECT 1: Login UI
+         Link tombol "Lihat Demo" ada di href pertama (ganti kalau perlu).
+         data-k = kategori untuk filter. -->
+    <article class="card" data-k="functional negative">
+      <h3>Secure Login UI</h3>
+      <p>Halaman login dan autentikasi (HTML/CSS/JS).</p>
+      <p class="tag">Functional, Negative Testing</p>
+      <div class="btns">
+        <a class="btn" href="https://mridwanlbs233-collab.github.io/login-ui/" target="_blank" rel="noopener">Lihat Demo</a>
+        <a class="btn ghost" href="reports/login-ui.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: To-Do List -->
+    <article class="card" data-k="functional">
+      <h3>To-Do List</h3>
+      <p>Aplikasi CRUD dengan penyimpanan localStorage.</p>
+      <p class="tag">Functional, CRUD Testing</p>
+      <div class="btns">
+        <a class="btn" href="https://mridwanlbs233-collab.github.io/todo-list/" target="_blank" rel="noopener">Lihat Demo</a>
+        <a class="btn ghost" href="reports/todo-list.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 3: Katalog Buku -->
+    <article class="card" data-k="functional">
+      <h3>Katalog Buku (Library)</h3>
+      <p>Cari, filter, dan pinjam buku.</p>
+      <p class="tag">Functional, Search dan Filter</p>
+      <div class="btns">
+        <a class="btn" href="https://mridwanlbs233-collab.github.io/library/" target="_blank" rel="noopener">Lihat Demo</a>
+        <a class="btn ghost" href="reports/library.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 4: Form Registrasi -->
+    <article class="card" data-k="bva ep">
+      <h3>Mini Bank</h3>
+      <p>transfer saldo dengan validasi nominal, saldo, limit harian, dan PIN.</p>
+      <p class="tag">Boundary Value, Equivalence Partitioning</p>
+      <div class="btns">
+        <a class="btn" href="https://mridwanlbs233-collab.github.io/registrasi/" target="_blank" rel="noopener">Lihat Demo</a>
+        <a class="btn ghost" href="reports/registrasi.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 5: Online Shop -->
+    <article class="card" data-k="functional e2e">
+      <h3>Online Shop Web App: Alur Belanja dari Produk sampai Transaksi</h3>
+      <p>Alur belanja lengkap dari daftar produk, keranjang, hingga transaksi.</p>
+      <p class="tag">Functional, End-to-End Flow</p>
+      <div class="btns">
+        <a class="btn" href="https://mridwanlbs233-collab.github.io/online-shop/" target="_blank" rel="noopener">Lihat Demo</a>
+        <a class="btn ghost" href="reports/online-shop.pdf" target="_blank" rel="noopener">Laporan Test (PDF)</a>
+      </div>
+    </article>
+
+    <!-- Untuk menambah project: salin satu blok <article> sampai </article>, tempel di sini,
+         lalu ubah judul, deskripsi, link, dan data-k. -->
+
+  </div>
 </section>
+
+<!-- ===== PERJALANAN (TIMELINE) ===== -->
 <section id="perjalanan" class="reveal">
-<h2>Perjalanan</h2>
-<div class="timeline">
-<div class="item"><time>SAAT INI</time><h3>Beralih ke software testing</h3><p>Membangun portofolio QA: test case, bug report, dan laporan hasil test.</p></div>
-<div class="item"><time>AGU 2025 - SEKARANG</time><h3>Technical Support</h3><p>PT Envision, Jakarta Selatan. Dukungan teknis untuk pengguna.</p></div>
-<div class="item"><time>2020 - 2024</time><h3>S1 Ilmu Komputer</h3><p>Universitas Sumatera Utara, IPK 3,61. Skripsi: karakter musuh dengan AI pada game top-down shooter “From The Downtown”.</p></div>
-</div>
+  <h2>Pengalaman</h2>
+  <div class="timeline">
+    <div class="item">
+      <time>SAAT INI</time>
+      <h3>Beralih ke software testing</h3>
+      <p>Membangun portofolio QA: test case, bug report, dan laporan hasil test.</p>
+    </div>
+    <div class="item">
+      <time>AGU 2025 - SEKARANG</time>
+      <h3>Technical Support</h3>
+      <p>PT Envision, Jakarta Selatan. Dukungan teknis untuk pengguna.</p>
+    </div>
+    <div class="item">
+      <time>2020 - 2024</time>
+      <h3>S1 Ilmu Komputer</h3>
+      <p>Universitas Sumatera Utara, IPK 3,61. Skripsi: karakter musuh dengan AI pada game top-down shooter “From The Downtown”.</p>
+    </div>
+  </div>
 </section>
+
 </main>
+
+<!-- ===== KONTAK ===== -->
 <footer id="kontak"><div class="wrap">
-<h2 style="margin:0;font-size:24px">Kontak</h2>
-<p>Email: <a href="mailto:mridwanlbs233@email.com">mridwanlbs233@email.com</a> · <a href="https://www.linkedin.com/in/mridwanlbs23">LinkedIn</a> · <a href="https://github.com/mridwanlbs233-collab">GitHub</a></p>
+  <h2 style="margin:0;font-size:24px">Kontak</h2>
+  <p>Email: <a href="mailto:mridwanlbs233@email.com">mridwanlbs233@email.com</a> ·
+     <a href="https://www.linkedin.com/in/mridwanlbs23">LinkedIn</a> ·
+     <a href="https://github.com/mridwanlbs233-collab">GitHub</a></p>
 </div></footer>
-<script src="projects.js"></script>
+
 <script src="script.js"></script>
 </body>
 </html>
