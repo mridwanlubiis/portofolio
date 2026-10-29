@@ -18,7 +18,11 @@ var root = document.documentElement;
 var tombolTema = document.getElementById("theme");
 function setTema(tema) {
   root.dataset.theme = tema;
-  tombolTema.textContent = tema === "dark" ? "Mode terang" : "Mode gelap";
+  // Ikon menunjukkan mode yang sedang aktif: bulan = gelap (malam), matahari = terang
+  tombolTema.textContent = tema === "dark" ? "🌙" : "☀️";
+  var tujuan = tema === "dark" ? "Ganti ke mode terang" : "Ganti ke mode gelap";
+  tombolTema.setAttribute("aria-label", tujuan);
+  tombolTema.title = tujuan;
   try { localStorage.setItem("theme", tema); } catch (e) {}
 }
 var tersimpan = null;
