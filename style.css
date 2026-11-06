@@ -42,6 +42,13 @@ h1{margin:8px 0 12px;font-size:clamp(32px,6vw,56px);line-height:1.1;color:var(--
 h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{color:var(--muted);font-size:18px;max-width:640px;margin:0 0 24px}
 
+.photo img{
+  object-position:center 0%;
+  transform:scale(.88);
+  transform-origin:center bottom;
+}
+.photo:has(img) .inisial{background:#B9BBC4;color:transparent}
+
 /* ===== TOMBOL ===== */
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn{min-height:44px;padding:0 20px;display:inline-flex;align-items:center;border-radius:8px;background:var(--accent);color:var(--btn-ink);font-weight:600;text-decoration:none;border:2px solid var(--accent);transition:transform .2s,box-shadow .2s}
