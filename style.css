@@ -47,7 +47,10 @@ h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-b
   transform:scale(.88);
   transform-origin:center bottom;
 }
-.photo:has(img) .inisial{background:#B9BBC4;color:transparent}
+.photo:has(img) .inisial{
+  background:#fff;        
+  color:transparent;
+}
 
 /* ===== TOMBOL ===== */
 .btns{display:flex;gap:12px;flex-wrap:wrap}
