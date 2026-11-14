@@ -41,7 +41,7 @@ nav a:hover{color:var(--accent)}
    padding-top memberi ruang kosong di atas kepala, dan ruang itu diisi warna
    pada "background" (samakan dengan warna latar fotomu).
    Atur padding-top (8% sampai 16%) sesuai selera. */
-.photo img{object-position:center top;padding-top:8%;background:#B9BBC4}
+.photo img{object-position:center top;padding-top:1%;background:#B9BBC4}
 .eyebrow{margin:0;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--accent)}
 h1{margin:8px 0 12px;font-size:clamp(32px,6vw,56px);line-height:1.1;color:var(--ink)}
 h1 span{background:white(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
